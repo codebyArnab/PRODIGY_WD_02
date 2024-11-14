@@ -1,0 +1,87 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #333;
+}
+
+.stopwatch {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+#display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
+
+.buttons button:nth-child(1) {
+    background-color: #28a745; /* Start button - Green */
+}
+
+.buttons button:nth-child(2) {
+    background-color: #ffc107; /* Pause button - Yellow */
+    color: #333;
+}
+
+.buttons button:nth-child(3) {
+    background-color: #dc3545; /* Reset button - Red */
+}
+
+.buttons button:nth-child(4) {
+    background-color: #007bff; /* Lap button - Blue */
+}
+
+#laps {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+}
+
+#laps li {
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
